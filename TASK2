@@ -1,0 +1,44 @@
+
+import java.util.Scanner;
+
+public class garde {
+
+
+    public static void main(String[] args) {
+
+
+
+                Scanner scanner = new Scanner(System.in);
+
+                System.out.print("Enter the number of grades: ");
+                int n = scanner.nextInt();
+
+                float[] grades = new float[n];
+                float sum = 0.0f;
+
+                // Input
+                for (int i = 0; i < n; i++) {
+                    System.out.print("Enter grade " + (i + 1) + ": ");
+                    grades[i] = scanner.nextFloat();
+                    sum += grades[i];
+                }
+
+                // Calculate
+                float average = sum / n;
+
+                // Display
+                System.out.println("The average grade is: " + average);
+
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
